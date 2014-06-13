@@ -13,6 +13,17 @@ file.  This is OK.  Type the following into this blank file:
 Now, when you start a Powershell session, Winadminorim will be loaded by default.  
 ANY CHANGES TO WINADMINORIM REQUIRE A NEW POWERSHELL SESSION TO BE STARTED!
 
+If you receive an error about the script not being digitally signed, set the execution policy of scripts to allow running
+unsigned scripts via:
+
+    set-executionpolicy remotesigned
+
+or 
+
+    set-executionpolicy unrestricted
+
+if you don't care about running unsigned scripts.
+
 #Load Winadminorim
    . C:\Users\Scripts\Winadminorim.ps1 #If this is where you placed the Winadminorim.ps1 file. 
 
